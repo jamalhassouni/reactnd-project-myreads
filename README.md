@@ -1,16 +1,19 @@
 # MyReads Project
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+A bookshelf app that allows user to select and categorize books as you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+This was built for the Udacity React Nanodegree Program. It's the first of three final projects, and the main objective is apply everything you had learned in the React module.
 
-## TL;DR
+## Requirements
+* [nodejs](https://nodejs.org/en/)
+* [npm](https://www.npmjs.com/)
 
-To get started developing right away:
+## How to Run:
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
-
+1. [Download](https://github.com/jamalhassouni/reactnd-project-myreads/archive/master.zip) or [Clone](https://github.com/jamalhassouni/reactnd-project-myreads.git) the Repository.
+2. Run `npm install` to install the project dependencies.
+3. Run the app using `npm start`.
+4. App can be seen at: `localhost:3000`.
 
 ## Backend Server
 
