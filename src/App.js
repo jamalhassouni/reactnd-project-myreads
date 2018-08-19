@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import ListShelves from './ListShelves';
+import Search from './Search';
 class BooksApp extends Component {
   constructor(props) {
     super(props);
@@ -39,6 +40,10 @@ class BooksApp extends Component {
           <ListShelves onChangeShelf={this.onChangeShelf}
                        books={this.state.books}
                        isLoading={this.state.loading}/>)}/>
+        <Route path="/search" render={() => ( <Search
+            books={this.state.books}
+             onChangeShelf={this.onChangeShelf}
+         /> ) } />
       </Switch>
     </div>);
   }
