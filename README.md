@@ -2,7 +2,7 @@
 
 A bookshelf app that allows user to select and categorize books as you have read, are currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
 
-This was built for the Udacity React Nanodegree Program. It's the first of three final projects, and the main objective is apply everything you had learned in the React module.
+This was built for the Udacity React Nanodegree Program. It's the first of three final projects, and the main objective is to apply everything I had learned in the React module.
  [live preview](https://myreads-demo.netlify.com/)
 ## Requirements
 * [nodejs](https://nodejs.org/en/)
