@@ -204,3 +204,21 @@ a.book-title {
   text-align: center;
   font-size: 0.8em;
 }
+
+/* Page 404 */
+.page-error{
+  width: 100%;
+  text-align: center;
+   color :#48dbfb;
+
+}
+.page-error h1 {
+  font-size: 80pt;
+  margin-bottom: 0;
+}
+.page-error h3 {
+  font-size: 25pt;
+}
+.page-error .redirectHome{
+  color: #ff6b6b;
+}
