@@ -19,11 +19,15 @@ const ListShelves = (props) =>  {
             {!props.isLoading && BOOK_SHELVES.map(shelf => {
             return (
               <Shelf
-              isLoading={props.loading}
+               isLoading={props.loading}
                onChangeShelf={props.onChangeShelf}
-                key={shelf.name}
-                shelfName={shelf.displayName}
-                books={filterBookByShelf(props.books, shelf.name)}
+               onChangeShelfToggle={props.onChangeShelfToggle}
+               handleCheck={props.handleCheck}
+               onChangeCheckbox={props.onChangeCheckbox}
+               key={shelf.name}
+               shelfName={shelf.displayName}
+               InputName={shelf.name}
+               books={filterBookByShelf(props.books, shelf.name)}
               />
             );
           }) }

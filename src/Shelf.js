@@ -1,6 +1,6 @@
 import React from "react";
 import Book from "./Book";
-
+import Toggle from "./Toggle";
 const Shelf = props => {
   return (
     <div className="bookshelf" key={props.keys}>
@@ -10,6 +10,11 @@ const Shelf = props => {
       >
         {props.shelfName}
       </h2>
+      <Toggle books={props.books}
+        handleCheck={props.handleCheck}
+        onChangeShelfToggle={props.onChangeShelfToggle}
+        InputName={props.InputName}/>
+        
       <div className="bookshelf-books">
         <ol className="books-grid">
           {props.isLoading && (
@@ -22,7 +27,9 @@ const Shelf = props => {
             props.books.map(book => {
               return (
                 <li key={book.id}>
-                  <Book book={book} onChangeShelf={props.onChangeShelf} />
+                  <Book book={book}
+                        onChangeShelf={props.onChangeShelf}
+                        onChangeCheckbox={props.onChangeCheckbox} />
                 </li>
               );
             })
