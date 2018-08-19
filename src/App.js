@@ -4,6 +4,7 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 import ListShelves from './ListShelves';
 import Search from './Search';
+import Page404 from './Page404';
 class BooksApp extends Component {
   constructor(props) {
     super(props);
@@ -44,6 +45,7 @@ class BooksApp extends Component {
             books={this.state.books}
              onChangeShelf={this.onChangeShelf}
          /> ) } />
+        <Route component={Page404} />
       </Switch>
     </div>);
   }
